@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Playfair+Display:wght@700&family=Poppins:wght@500;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Source+Code+Pro:ital,wght@1,200&family=Ubuntu&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  background: url(bg.jpg);
+  background-size: cover;
+}
+section .leftBox {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 50px;
+  box-sizing: border-box;
+}
+section .leftBox .content {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  transition: 0.5s;
+}
+
+section .leftBox .content:hover {
+  background: #e91e63;
+}
+section .leftBox .content h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+section .leftBox .content p {
+  margin: 10px 0 0;
+  padding: 0;
+}
+section .events {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  float: right;
+  box-sizing: border-box;
+}
+section .events ul {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 40px;
+  box-sizing: border-box;
+}
+section .events ul li {
+  list-style: none;
+  background: #fff;
+  box-sizing: border-box;
+  height: 200px;
+  margin: 15px 0;
+}
+section .events ul li .time {
+  position: relative;
+  padding: 20px;
+  background: #262626;
+  box-sizing: border-box;
+  width: 30%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  transition: 0.5s;
+}
+section .events ul li:hover .time {
+  background: #e91e63;
+}
+section .events ul li .time h2 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 60px;
+  line-height: 30px;
+}
+section .events ul li .time h2 span {
+  font-size: 30px;
+}
+section .events ul li .details {
+  padding: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+section .events ul li .details h3 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+section .events ul li .details p {
+  position: relative;
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 16px;
+}
+section .events ul li .details a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 2px solid #262626;
+  margin-top: 15px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+section .events ul li .details a:hover {
+  background: #e91e63;
+  color: #fff;
+  border-color: #e91e63;
+}
+.z {
+  font-size: 20px;
+  color: #e91e63;
+  text-align: center;
+}
+.z a {
+  text-decoration: none;
+  color: #e66791;
+}
+@media (max-width: 991px) {
+  section {
+    height: 100%;
+    background-position: center;
+  }
+  section .leftBox {
+    width: 100%;
+    height: auto;
+    float: none;
+    padding: 20px;
+  }
+  section .events {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    float: none;
+  }
+  section .leftBox .content {
+    padding: 20px;
+  }
+  section .leftBox .content h1 {
+    font-size: 30px;
+  }
+  section .events ul {
+    position: relative;
+    transform: translateY(0px);
+    padding: 0 20px 20px;
+  }
+  section .events ul li {
+    height: auto;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  section .events ul li .time {
+    width: 80px;
+    height: 80px;
+    padding: 0;
+  }
+  section .events ul li .time h2 {
+    font-size: 30px;
+    line-height: 24px;
+  }
+  section .events ul li .details {
+    width: 100%;
+    float: none;
+    padding-left: 100px;
+    background: transparent;
+  }
+  section .events ul li .details a {
+    padding: 5px 10px;
+  }
+}
